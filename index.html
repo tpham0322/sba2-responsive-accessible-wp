@@ -3,12 +3,316 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Page</title>
-
-    </style>
+    <title>Accessible Design Co.</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <h1>Welcome</h1>
-    <p>This is a simple HTML page.</p>
+    <header>
+
+        <nav class="navbar"
+            role="navigation"
+            aria-label="Main Navigation">
+
+            <div class="logo">
+                <img src="images/logo.png"alt="Accessible Design Co. logo">
+
+                <h1>Accessible Design Co.</h1>
+            </div>
+
+            <ul class="nav-links">
+                <li>
+                    <a href="#hero">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#about">
+                        About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#services">
+                        Services
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contact">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section id="hero" class="hero">
+            <div class="hero-content">
+
+                <h2>
+                    Building Websites Everyone Can Use
+                </h2>
+
+                <p>
+                    Accessible Design Co. specializes in creating modern,
+                    responsive, and accessible websites that work for
+                    everyone regardless of ability.
+                </p>
+
+                <a href="#contact" class="button">Contact Us</a>
+
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about">
+            <h2>
+                About Us
+            </h2>
+
+            <article>
+                <p>
+                    Accessible Design Co. is dedicated to developing
+                    websites that follow modern accessibility standards.
+                    We believe everyone deserves equal access to digital
+                    experiences.
+                </p>
+
+                <p>
+                    Our team creates responsive websites using semantic
+                    HTML, CSS Flexbox, CSS Grid, and accessibility best
+                    practices to ensure every visitor has an enjoyable
+                    browsing experience.
+                </p>
+            </article>
+
+        </section>
+
+        <!-- ================= SERVICES ================= -->
+
+        <section id="services">
+            <h2>Our Services</h2>
+
+            <div class="service-grid">
+
+                <article class="service-card">
+
+                    <h3>Web Design</h3>
+
+                    <p>
+                        We create attractive, responsive websites that look
+                        great on desktops, tablets, and mobile devices.
+                    </p>
+                </article>
+
+                <article class="service-card">
+
+                    <!-- placeholder icon
+                    <img src=""alt="">
+                    -->
+
+                    <h3>Accessibility</h3>
+
+                    <p>
+                        We build websites that follow accessibility
+                        guidelines to ensure every visitor can use your site.
+                    </p>
+
+                </article>
+
+                <article class="service-card">
+
+                    <!-- placeholder
+                    <img src=""alt="">
+                    -->
+
+                    <h3>Responsive Design</h3>
+
+                    <p>
+                        Your website will automatically adapt to different
+                        screen sizes using modern CSS techniques.
+                    </p>
+
+                </article>
+
+                <article class="service-card">
+
+                    <!-- placeholder
+                    <img src=""alt="">
+                    -->
+
+                    <h3>SEO Optimization</h3>
+
+                    <p>
+                        Improve your online visibility with websites built
+                        using search engine optimization best practices.
+                    </p>
+
+                </article>
+
+                <article class="service-card">
+
+                    <!-- placeholder
+                    <img src=""alt="">
+                    -->
+
+                    <h3>Support</h3>
+
+                    <p>
+                        We provide ongoing maintenance and technical support
+                        to keep your website running smoothly.
+                    </p>
+
+                </article>
+
+                <article class="service-card">
+                    <!-- placeholder
+                    <img src=""alt="">
+                    -->
+                    <h3>Website Security</h3>
+
+                    <p>
+                        Keep your website secure with regular updates and
+                        security improvements.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- ================= CONTACT ================= -->
+
+        <section id="contact">
+
+            <h2>Contact Us</h2>
+
+            <form
+                action="#"
+                method="post"
+                aria-describedby="form-help">
+
+                <p id="form-help">
+                    Complete the required fields below and click
+                    <strong>Send Message</strong>.
+                </p>
+
+                <div
+                    id="form-status"
+                    role="alert"
+                    aria-live="polite">
+                </div>
+
+                <div class="form-group">
+
+                    <label for="name">
+                        Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        autocomplete="name"
+                        required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="subject">
+                        Subject
+                    </label>
+
+                    <input
+                        type="text"
+                        id="subject"
+                        name="subject">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Message
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        required></textarea>
+
+                </div>
+
+                <button type="submit">
+
+                    Send Message
+
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 Truong Pham
+        </p>
+
+        <address>
+            Email:
+            <a href="mailto:info@accessibl.com">
+                info@accessibl.com
+            </a>
+
+            <br>
+
+            Phone:
+            <a href="tel:+18005551234">
+                (800) 555-1234
+            </a>
+        </address>
+
+        <nav class="social-links" aria-label="Social Media">
+
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+
+        </nav>
+
+    </footer>
+
 </body>
 </html>
